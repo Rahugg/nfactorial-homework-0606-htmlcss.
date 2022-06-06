@@ -1,0 +1,153 @@
+body {
+    margin: 20px 40px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+  
+  /*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+  .wrapper {
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+  }
+  
+  /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+  .redExample {
+    flex: 1;
+    background-color: red;
+  }
+  
+  /*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+  .blueExample {
+    flex: 1;
+    background-color: blue;
+  }
+  
+  /*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+  .emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  
+  .blueExample2 {
+    width: 80px;
+    background-color: blue;
+  }
+  
+  /* TODO: Add CSS for the rest of your solution below */
+  .redExample3{
+    width: 80px;
+    background-color: red;
+  }
+  .emptyExample3 {
+    display: flex;
+    flex: 1;
+  }
+  .blueExample3{
+    width: 80px;
+    background-color: blue;
+    display: flex;
+  }
+  /* CODE FOR ROW4   */
+  .redExample4{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    background-color: red;
+  }
+  .blueExample4{
+    width: 80px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /* CODE FOR ROW5 */
+  .wrapper2{
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .redExample5{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width:44px;
+    background-color: red;
+  }
+  /* CODE FOR ROW6 */
+  .wrapper3{
+    display: flex;
+    height: 60px;
+    background-color: red;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .blueExample6{
+    width: 80px;
+    background-color: blue;
+    display: flex;
+  }
+  /*CODE FOR ROW7 */
+  .wrapper4{
+    display: flex;
+    height: 60px;
+    background-color: blue;
+    margin-bottom: 20px;
+  }
+  .redExample7{
+      width:80px;
+      background-color:red;
+  }
+  .green7{
+      background-color:green;
+      display:flex;
+      flex:1;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  /* CODE FOR ROW8 */
+  .eight{
+      display:flex;
+      justify-content: space-between;
+      flex:1;
+  }
+  .dummy{
+      background-color:orange;
+      width:80px;
+  }
+  /* CODE FOR ROW9 */
+  .wrapper9 {
+    display: flex;
+    height: 60px;
+    background-color: orange;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    flex:1;
+  }
+  .dummy2{
+    background-color:green;
+    width:20px;
+}
+    /* FOR PHONE */
+    @media screen and (max-width: 768px) {
+        .dummy{
+          background-color: orange;
+          width: 90px; 
+          
+        }
+        .dummy2{
+          background-color: green;
+          width: 30px;
+        }
+      }
